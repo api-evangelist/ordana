@@ -1,8 +1,30 @@
 aid: ordana
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ordana.png
 name: Ordana
-description: Ordana is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
-url: https://raw.githubusercontent.com/api-evangelist/ordana/refs/heads/main/apis.yml
+description: >-
+  Ordana provides AI agents that run wholesale order-desk operations for
+  distributors, reading every order across email, fax, PDF, EDI, voice, SMS and
+  chat, resolving exceptions, communicating with retailers, and closing orders
+  directly into the customer's ERP. Four agents cover the surface: Desk (end-to-end
+  order automation), Voice (inbound/outbound phone ordering), Predict (cart
+  prediction and AOV optimization), and Chat (text/SMS ordering). Ordana sits as an
+  intelligence layer on top of existing ERP and commerce systems via pre-built
+  connectors, and exposes its capabilities through a gated REST API, Webhooks, an
+  MCP (Model Context Protocol) server over HTTP/SSE with OAuth 2.0, and the A2A
+  agent-to-agent protocol. Surfaced as a Techstars portfolio company and enriched
+  into the API Evangelist network.
+url: https://ordana.ai/
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Artificial Intelligence
+- AI Agents
+- Order Management
+- Wholesale Distribution
+- ERP Integration
+- Automation
+- MCP
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,30 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ordana-domain-security.yml
+- type: MCPServer
+  url: mcp/ordana-mcp.yml
+- type: Conformance
+  url: conformance/ordana-conformance.yml
 - type: Website
-  url: https://blu.ai/
+  url: https://ordana.ai/
+- type: Documentation
+  url: https://ordana.ai/api-docs
+- type: APIReference
+  url: https://ordana.ai/api-docs
+- type: Integrations
+  url: https://ordana.ai/integrations
+- type: Blog
+  url: https://ordana.ai/news
+- type: About
+  url: https://ordana.ai/about
+- type: Support
+  url: https://ordana.ai/contact
+- type: SignUp
+  url: https://ordana.ai/contact
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

@@ -1,0 +1,46 @@
+generated: '2026-07-20'
+method: searched
+source: https://ordana.ai/integrations
+note: >-
+  Asserted from Ordana's public integrations and data-handling statements. No
+  OpenAPI/AsyncAPI spec is published and API docs are gated, so protocol
+  conformance is captured from documented claims rather than a machine-readable
+  spec. Ordana states it operates to GDPR standards globally but names no formal
+  audited certification (SOC 2 / ISO 27001 / PCI / HIPAA / FedRAMP), so no
+  Compliance pointer is emitted.
+standards:
+- id: mcp
+  conforms: true
+  evidence: >-
+    First-party MCP server documented (HTTP/SSE, OAuth 2.0) exposing ERP
+    inventory/pricing/order-history to agents.
+- id: a2a
+  conforms: true
+  evidence: >-
+    Supports Google's A2A protocol (JSON-RPC 2.0 with Agent Card discovery) for
+    agent-to-agent task delegation.
+- id: oauth2
+  conforms: true
+  evidence: MCP transport documented as HTTP/SSE with OAuth 2.0 authentication.
+- id: jsonrpc
+  conforms: true
+  evidence: A2A support implies JSON-RPC 2.0 message format.
+- id: rest
+  conforms: true
+  evidence: A gated REST API is offered (access via https://ordana.ai/api-docs).
+- id: webhooks
+  conforms: true
+  evidence: >-
+    Webhooks & Events listed as an integration category; no public event catalog
+    published.
+- id: gdpr
+  conforms: true
+  evidence: >-
+    States it operates to GDPR standards regardless of customer location, with
+    isolated per-customer deployments and a documented clean-exit/export
+    guarantee.
+- id: oidc
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public error format documented (API reference is gated).
