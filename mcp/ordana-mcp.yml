@@ -1,7 +1,8 @@
 generated: '2026-07-20'
 method: searched
 source: https://ordana.ai/integrations
-status: documented
+status: published
+status_raw: documented
 summary: >-
   Ordana documents a first-party MCP (Model Context Protocol) server on its
   integrations page as one of the ways agents connect to the platform. Per the
