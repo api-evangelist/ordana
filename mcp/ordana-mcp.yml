@@ -3,34 +3,33 @@ method: searched
 source: https://ordana.ai/integrations
 status: published
 status_raw: documented
-summary: >-
-  Ordana documents a first-party MCP (Model Context Protocol) server on its
-  integrations page as one of the ways agents connect to the platform. Per the
-  docs, the server lets an AI agent "pull live inventory, pricing, and order
-  history from your ERP without building a custom connector." No public tool
-  manifest, endpoint URL, or connection string is published — API and MCP access
-  is gated behind a request-access form (https://ordana.ai/api-docs) — so the
-  concrete tool list below is UNRESOLVED, not fabricated.
+summary: Ordana documents a first-party MCP (Model Context Protocol) server on its integrations page as
+  one of the ways agents connect to the platform. Per the docs, the server lets an AI agent "pull live
+  inventory, pricing, and order history from your ERP without building a custom connector." No public
+  tool manifest, endpoint URL, or connection string is published — API and MCP access is gated behind
+  a request-access form (https://ordana.ai/api-docs) — so the concrete tool list below is UNRESOLVED,
+  not fabricated.
 server: null
 transport: HTTP/SSE
 auth:
   type: oauth2
-  note: >-
-    Integrations page states the MCP transport is "HTTP/SSE with OAuth 2.0
-    authentication."
+  note: Integrations page states the MCP transport is "HTTP/SSE with OAuth 2.0 authentication."
 documented_capabilities:
 - Pull live inventory from the connected ERP.
 - Pull live pricing from the connected ERP.
 - Pull order history from the connected ERP.
 related_protocols:
 - name: A2A (Agent-to-Agent)
-  detail: >-
-    Google's open agent-to-agent protocol, JSON-RPC 2.0 with Agent Card
-    discovery; enables handoffs such as Desk Agent to Voice Agent with full
-    auditability.
+  detail: Google's open agent-to-agent protocol, JSON-RPC 2.0 with Agent Card discovery; enables handoffs
+    such as Desk Agent to Voice Agent with full auditability.
 - name: REST API
   detail: Gated REST API; access requested via https://ordana.ai/api-docs.
 - name: Webhooks & Events
   detail: Event delivery listed as an integration category; no public catalog.
 - name: OpenAI Agents SDK
   detail: Compatibility listed on the roadmap (not yet available).
+deployment:
+  mode: remote
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
