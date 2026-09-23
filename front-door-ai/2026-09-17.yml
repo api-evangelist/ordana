@@ -1,0 +1,29 @@
+# Front Door AI Index — ordana — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: ordana
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: ordana.ai
+  final_host: ordana.ai
+  ownership: own
+  owner: ordana
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 11
+  host_score: 11
+  density: 9.85
+  words: 1117
+  tiers:
+    agentic: 5
+    core: 6
+    model: 0
+  ambiguous: 20
+  top_terms:
+    agent: 15
+    AI: 6
+    AI agent: 5
+    automation: 4
+    intelligence: 1
